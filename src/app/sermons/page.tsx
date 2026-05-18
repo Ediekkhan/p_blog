@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Hero } from '@/components/Hero'
 import { MediaCard } from '@/components/MediaCard'
-import { getSermons, getCategories, getSermonsByCategory } from '@/lib/queries'
+import { getSermons, getCategories } from '@/lib/queries'
 import { Sermon, Category } from '@/types'
 import { Search } from 'lucide-react'
 

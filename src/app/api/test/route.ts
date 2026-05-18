@@ -1,5 +1,3 @@
-"use client"; // <--- Add this at the exact top of the file, above any imports
-
 import { getFeaturedSermons, getCategories } from '@/lib/queries'
 import { NextResponse } from 'next/server'
 

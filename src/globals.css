@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+  --color-charcoal: #1a1a1a;
+  --color-gold: #d4af37;
+  --color-off-white: #f9f9f9;
+  --color-light-gray: #e8e8e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-off-white text-charcoal font-sans;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1 {
+  @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+  color: var(--color-charcoal);
+}
+
+h2 {
+  @apply font-serif text-3xl md:text-4xl font-semibold tracking-tight;
+  color: var(--color-charcoal);
+}
+
+h3 {
+  @apply font-serif text-2xl md:text-3xl font-semibold;
+  color: var(--color-charcoal);
+}
+
+h4 {
+  @apply font-serif text-xl font-semibold;
+}
+
+p {
+  @apply text-gray-700 leading-relaxed;
+}
+
+a {
+  @apply transition-colors duration-300;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-6 py-3 bg-gold text-charcoal font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 border-2 border-gold text-gold font-semibold rounded-lg hover:bg-gold hover:text-charcoal transition-all duration-300 flex items-center gap-2;
+}
+
+.btn-tertiary {
+  @apply px-6 py-3 bg-charcoal text-off-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2;
+}
+
+/* Cards */
+.card {
+  @apply bg-white border border-light-gray rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300;
+}
+
+/* Section Spacing */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-custom {
+  @apply mx-auto px-4 md:px-6 lg:px-8 max-w-7xl;
+}
+
+/* Divider */
+.divider {
+  @apply h-1 w-16 bg-gold;
+}
+
+/* Accent Line */
+.accent-line {
+  @apply h-0.5 w-full bg-gradient-to-r from-gold via-gold to-transparent;
+}
+
+/* Glass effect for overlays */
+.glass {
+  @apply backdrop-blur-md bg-white bg-opacity-80;
+}
+
+/* Utility for text animation */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-charcoal to-gold;
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  @apply outline-none ring-2 ring-gold ring-offset-2;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-off-white;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-opacity-80;
+}

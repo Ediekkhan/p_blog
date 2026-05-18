@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { motion } from 'framer-motion'
 import { Send, CheckCircle } from 'lucide-react'
-import { PrayerRequest } from '@/types'
+// import { PrayerRequest } from '@/types'
 
 const prayerSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),

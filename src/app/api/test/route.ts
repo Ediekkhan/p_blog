@@ -1,3 +1,5 @@
+"use client"; // <--- Add this at the exact top of the file, above any imports
+
 import { getFeaturedSermons, getCategories } from '@/lib/queries'
 import { NextResponse } from 'next/server'
 
@@ -18,6 +20,6 @@ export async function GET() {
     })
   } catch (error) {
     console.error('API Route Error:', error)
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: (error as any).message }, { status: 500 })
   }
 }

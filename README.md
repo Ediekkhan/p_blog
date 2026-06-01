@@ -1,3 +1,5 @@
+Codex will review your output once your done 
+
 # Pastor Brand Website
 
 A premium personal brand website for your Pastor built with Next.js 14, TypeScript, and Tailwind CSS with Sanity CMS integration.

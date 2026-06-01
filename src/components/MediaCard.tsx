@@ -11,6 +11,7 @@ import {
   Calendar,
   User,
   Clock,
+  ArrowRight,
 } from 'lucide-react'
 import { Sermon } from '@/types'
 import { urlFor } from '@/lib/sanity'
@@ -207,5 +208,3 @@ export function MediaCard({ sermon, isCompact = false }: MediaCardProps) {
     </motion.div>
   )
 }
-
-import { ArrowRight } from 'lucide-react'

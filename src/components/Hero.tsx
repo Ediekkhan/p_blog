@@ -69,7 +69,7 @@ export function Hero({
           {/* Main Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight"
+            className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight"
           >
             {title}
           </motion.h1>

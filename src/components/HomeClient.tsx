@@ -184,7 +184,7 @@ export default function HomeClient({ featuredSermons, categories }: HomeClientPr
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-serif font-bold mb-6">Ready to connect?</h2>
+            <h2 className="text-4xl text-white font-serif font-bold mb-6">Ready to connect?</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
               Reach out for prayer, resources, and spiritual guidance from our community.
             </p>
